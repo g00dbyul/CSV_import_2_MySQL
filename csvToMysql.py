@@ -54,8 +54,8 @@ def main():
             csvImportToDB(connection, file)
             print(file + ' import complete')
 
-    except Exception:
-        print(Exception)
+    except Exception as e:
+        print(e)
         connection.close()
 
 if __name__=="__main__":
